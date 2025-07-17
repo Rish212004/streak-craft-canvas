@@ -2,41 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Habit Tracker Design System - Beautiful, calming, and motivating colors */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 240 8% 98%;
+    --foreground: 215 25% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 215 25% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 215 25% 20%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 210 100% 50%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 215 20% 95%;
+    --secondary-foreground: 215 25% 20%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 215 20% 95%;
+    --muted-foreground: 215 15% 50%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 24 95% 53%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 75% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 215 20% 90%;
+    --input: 215 20% 90%;
+    --ring: 210 100% 50%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Habit Tracker Specific Colors */
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+    --success-soft: 142 50% 95%;
+    
+    --warning: 45 93% 47%;
+    --warning-foreground: 0 0% 100%;
+    --warning-soft: 45 93% 95%;
+    
+    --streak: 240 100% 50%;
+    --streak-foreground: 0 0% 100%;
+    --streak-soft: 240 100% 98%;
+    
+    --incomplete: 215 15% 70%;
+    --incomplete-foreground: 0 0% 100%;
+    --incomplete-soft: 215 15% 95%;
+
+    /* Gradients */
+    --gradient-success: linear-gradient(135deg, hsl(142 71% 45%), hsl(142 71% 35%));
+    --gradient-primary: linear-gradient(135deg, hsl(210 100% 50%), hsl(210 100% 40%));
+    --gradient-accent: linear-gradient(135deg, hsl(24 95% 53%), hsl(24 95% 43%));
+    --gradient-streak: linear-gradient(135deg, hsl(240 100% 50%), hsl(280 100% 50%));
+    
+    /* Animations & Effects */
+    --shadow-soft: 0 2px 10px hsl(215 25% 20% / 0.1);
+    --shadow-medium: 0 4px 20px hsl(215 25% 20% / 0.15);
+    --shadow-success: 0 4px 20px hsl(142 71% 45% / 0.3);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 
